@@ -38,7 +38,22 @@
             </div>
         </section>
 
-        <a href="add_review.html" class="add-review-button">Add a Review</a>
+        <h2>Add a Review</h2>
+        <div class="review-form-container">
+            <form class="add-review">
+                <label for="review">Your Review:</label>
+                <textarea id="review" rows="4"></textarea>
+                <label for="rating">Rating:</label>
+                <select id="rating" class="large-select">
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+                <button type="submit" class="submit-button">Submit Review</button>
+            </form>
+        </div>
     </main>
 
     <footer>
