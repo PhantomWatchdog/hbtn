@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y:visible;
+    box-sizing: border-box;
+    background-color: #1e221e0d;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFA500;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.filter, .login-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.filter label, .login-form label, input{
+    margin-right: 10px;
+}
+
+.login-button {
+    color: #fff;
+    border: 1px solid #FFA500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #FFA500;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.places-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.place-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+}
+
+.details-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #FFA500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.place-details {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.place-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.reviews {
+    margin: 20px 0;
+}
+
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.add-review-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.add-review-button:hover {
+    background-color: #0056b3;
+}

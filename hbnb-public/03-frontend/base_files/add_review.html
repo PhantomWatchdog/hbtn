@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Review</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const addReviewButton = document.getElementById("add-review-button");
+            const reviewFormContainer = document.getElementById("review-form-container");
+
+            addReviewButton.addEventListener("click", function() {
+                if (reviewFormContainer.style.display === "none" || reviewFormContainer.style.display === "") {
+                    reviewFormContainer.style.display = "block";
+                } else {
+                    reviewFormContainer.style.display = "none";
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <a href="login.html" class="login-button">Login</a>
+    </header>
+
+    <main>
+        <h1>Add a Review</h1>
+        <form class="add-review">
+            <label for="review">Your Review:</label>
+            <textarea id="review" rows="4"></textarea>
+
+            <label for="rating">Rating:</label>
+            <select id="rating">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HbNB Evolution. All rights reserved.</p>
+    </footer>
+</body>
+</html>
